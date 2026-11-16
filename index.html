@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+
+    <!-- 1. CSS Externo: Reset vinculado ANTES da folha principal -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- 2. CSS Interno: Estilos gerais da página e do cabeçalho -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333333;
+        }
+
+        #cabecalho-principal {
+            background: linear-gradient(135deg, #1e272e, #2f3640);
+            color: #ffffff;
+            text-align: center;
+            padding: 35px 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #cabecalho-principal h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header id="cabecalho-principal">
+        <h1>Meu Portal de Entretenimento Digital</h1>
+        <!-- 3. CSS Inline aplicado diretamente no subtítulo -->
+        <p style="color: #fbc531; font-size: 1.05rem; margin-top: 8px; font-style: italic;">
+            Seu guia diário de cultura pop, áudio e inovação tecnológica.
+        </p>
+    </header>
+
+    <!-- Container Flexbox com as três colunas -->
+    <main class="container-flexbox">
+
+        <!-- SEÇÃO 1: Filmes e Séries -->
+        <section id="secao-filmes" class="cartao-secao">
+            <h2 class="titulo-secao">Filmes e Séries</h2>
+
+            <div class="bloco-midia">
+                <img src="imagens/filmes1.jpg" alt="Pôster do filme Jogos Vorazes: Amanhecer na Colheita">
+                <p class="fonte-imagem">Fonte: Lionsgate / Divulgação</p>
+            </div>
+            <p class="texto-explicativo">
+                A franquia Jogos Vorazes retorna aos cinemas com "Amanhecer na Colheita", explorando os bastidores políticos de Panem em uma nova trama distópica.
+            </p>
+
+            <div class="bloco-midia">
+                <img src="imagens/filmes2.jpg" alt="Pôster da animação A Viagem de Chihiro">
+                <p class="fonte-imagem">Fonte: Studio Ghibli / Divulgação</p>
+            </div>
+            <p class="texto-explicativo">
+                Clássico vencedor do Oscar, "A Viagem de Chihiro" segue como referência na animação mundial ao unir fantasia, folclore japonês e uma narrativa sensível.
+            </p>
+        </section>
+
+        <!-- SEÇÃO 2: Música e Podcasts -->
+        <section id="secao-musica" class="cartao-secao">
+            <h2 class="titulo-secao">Música e Podcasts</h2>
+
+            <div class="bloco-midia">
+                <img src="imagens/musica1.jpg" alt="Capa e vinil do álbum OASIS de J Balvin e Bad Bunny">
+                <p class="fonte-imagem">Fonte: Universal Music / Divulgação</p>
+            </div>
+            <p class="texto-explicativo">
+                O álbum colaborativo "OASIS", de J Balvin e Bad Bunny, consolidou a força da música urbana latina nas plataformas de streaming com batidas inovadoras.
+            </p>
+
+            <div class="bloco-midia">
+                <img src="imagens/musica2.jpg" alt="Foto da cantora Young Miko">
+                <p class="fonte-imagem">Fonte: Reprodução / Divulgação</p>
+            </div>
+            <p class="texto-explicativo">
+                A cantora porto-riquenha Young Miko destaca a nova geração do trap latino, ganhando espaço em videocasts e entrevistas sobre sua trajetória na música.
+            </p>
+        </section>
+
+        <!-- SEÇÃO 3: Games e Tecnologia -->
+        <section id="secao-games" class="cartao-secao">
+            <h2 class="titulo-secao">Games e Tecnologia</h2>
+
+            <div class="bloco-midia">
+                <img src="imagens/games1.jpg" alt="Capa do jogo Yoshi's Crafted World">
+                <p class="fonte-imagem">Fonte: Nintendo / Divulgação</p>
+            </div>
+            <p class="texto-explicativo">
+                Em "Yoshi's Crafted World", a direção de arte aposta em cenários feitos de papelão e materiais artesanais, provando que criatividade supera o fotorrealismo.
+            </p>
+
+            <div class="bloco-midia">
+                <img src="imagens/games2.jpg" alt="Capa do jogo Assassin's Creed Shadows">
+                <p class="fonte-imagem">Fonte: Ubisoft / Divulgação</p>
+            </div>
+            <p class="texto-explicativo">
+                Ambientado no Japão feudal, "Assassin's Creed Shadows" combina ação furtiva e combates intensos com gráficos de última geração e mundo aberto dinâmico.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Rodapé com CSS Inline adicional -->
+    <footer style="background-color: #1e272e; color: #dcdde1; text-align: center; padding: 18px; margin-top: 30px; font-size: 0.9rem;">
+        <p>Desenvolvido para a Atividade Agenda 13 – CSS | Portal de Entretenimento Digital</p>
+    </footer>
+
+</body>
+</html>
