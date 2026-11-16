@@ -5,6 +5,3 @@ Projeto desenvolvido para a atividade **Agenda 13 – Desenvolvimento de sistema
 ## Tecnologias Utilizadas
 - HTML5
 - CSS3 (Flexbox, Classes, IDs e CSS Reset)
-
-## Capturas de Tela
-![Tela do Portal](captura-portal.png)
