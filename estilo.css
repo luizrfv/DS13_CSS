@@ -1,0 +1,99 @@
+/* ==========================================================================
+   FOLHA DE ESTILO PRINCIPAL - Meu Portal de Entretenimento Digital
+   ========================================================================== */
+
+/* Container Flexbox: organiza as 3 seções lado a lado de forma responsiva */
+.container-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Faz as três colunas terem a mesma altura */
+    flex-wrap: wrap;      /* Permite quebra de linha em telas menores (celulares/tablets) */
+    gap: 24px;            /* Espaçamento uniforme entre as colunas */
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Classe padrão para cada cartão de seção */
+.cartao-secao {
+    flex: 1 1 300px; /* Cresce e encolhe proporcionalmente, com largura base de 300px */
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+/* Efeito sutil de elevação ao passar o mouse sobre a seção */
+.cartao-secao:hover {
+    transform: translateY(-4px);
+}
+
+/* ==========================================================================
+   PADRONIZAÇÃO VIA CLASSES (Títulos, Imagens, Fontes e Textos)
+   ========================================================================== */
+
+.titulo-secao {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ececec;
+}
+
+.bloco-midia {
+    margin-bottom: 10px;
+}
+
+/* Padroniza o tamanho e recorte das imagens para não quebrar o layout */
+.bloco-midia img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+/* Padroniza o estilo das fontes/créditos das imagens */
+.fonte-imagem {
+    font-size: 0.78rem;
+    font-style: italic;
+    color: #7f8fa6;
+    text-align: right;
+    margin-top: 4px;
+}
+
+.texto-explicativo {
+    font-size: 0.95rem;
+    color: #444444;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* ==========================================================================
+   ESTILOS INDIVIDUAIS POR ID (Identidade visual de cada seção)
+   ========================================================================== */
+
+/* Seção 1: Filmes e Séries (Tom Vermelho Cinema) */
+#secao-filmes {
+    border-top: 6px solid #e84118;
+}
+#secao-filmes .titulo-secao {
+    color: #c23616;
+}
+
+/* Seção 2: Música e Podcasts (Tom Verde Áudio) */
+#secao-musica {
+    border-top: 6px solid #4cd137;
+}
+#secao-musica .titulo-secao {
+    color: #2f9e20;
+}
+
+/* Seção 3: Games e Tecnologia (Tom Azul Tech) */
+#secao-games {
+    border-top: 6px solid #0097e6;
+}
+#secao-games .titulo-secao {
+    color: #0077b6;
+}
